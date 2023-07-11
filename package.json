@@ -1,6 +1,7 @@
 {
   "name": "hardware-universe",
   "version": "0.1.0",
+  "homepage": "https://fiqtor.github.io/hardware-universe",
   "private": true,
   "scripts": {
     "dev": "next dev",
