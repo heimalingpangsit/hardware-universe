@@ -1,4 +1,6 @@
+
 "use client"
+import { useState } from 'react'
 import Image from 'next/image'
 
 const productBox = (src: string, title: string, price: string, discount?: string) => (
