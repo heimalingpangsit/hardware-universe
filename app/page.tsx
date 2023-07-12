@@ -20,7 +20,7 @@ const productBox = (src: string, title: string, price: string, discount?: string
 
 const star = () => (
   <Image
-    src="/img/star.webp"
+    src="./img/star.webp"
     alt="null image source!"
     width={500}
     height={500}
