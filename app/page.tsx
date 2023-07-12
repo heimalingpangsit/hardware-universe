@@ -74,19 +74,19 @@ export default function Homepage() {
 
         <section id='best' className='flex justify-center gap-7 flex-wrap'>
           <h2 className='text-3xl w-full text-center'>BEST <span className='text-purple-600'>SELLERS</span></h2>
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99')}
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99')}
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x32GB', '174.99', '200.00')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x32GB', '174.99', '200.00')}
         </section>
 
         <section id='product' className='flex justify-center gap-7 flex-wrap'>
           <h2 className='text-3xl w-full text-center'>ALL  <span className='text-purple-600'>PRODUCTS</span></h2>
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99')}
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99')}
-          {productBox('/img/hyper32.webp', 'DDR4 HyperX RGB 2x32GB', '174.99')}
-          {productBox('/img/RTX4070TI.webp', 'MSI RTX4070 TI 8GB VENTUS', '699.99')}
-          {productBox('/img/RTX4070TI.webp', 'MSI RTX4070 TI 12GB VENTUS', '1099.99')}
-          {productBox('/img/RTX4070TI.webp', 'MSI RTX4070 TI 24GB VENTUS', '1699.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x32GB', '174.99')}
+          {productBox('./img/RTX4070TI.webp', 'MSI RTX4070 TI 8GB VENTUS', '699.99')}
+          {productBox('./img/RTX4070TI.webp', 'MSI RTX4070 TI 12GB VENTUS', '1099.99')}
+          {productBox('./img/RTX4070TI.webp', 'MSI RTX4070 TI 24GB VENTUS', '1699.99')}
         </section>
 
         <section id='comment' className='flex justify-center gap-7 flex-wrap'>

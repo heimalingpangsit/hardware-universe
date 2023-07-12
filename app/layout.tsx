@@ -53,7 +53,7 @@ export default function RootLayout({
         <title>Hardware Universe</title>
       </head>
       <body className={inter.className}>
-        {Navbar()}
+        <Navbar />
         {children}
         <footer id='footer' className='flex w-full bg-purple-500 mt-[100px] px-[5%] pt-[5%] flex-wrap justify-around'>
 
@@ -78,11 +78,11 @@ export default function RootLayout({
           <div className='text-center'>
             <h2 className='text-2xl font-bold text-slate-900'>Payment</h2>
             <ul className='gap-4 flex flex-wrap'>
-              {footerImage('/img/payment/bca.webp')}
-              {footerImage('/img/payment/bni.webp')}
-              {footerImage('/img/payment/paypal.webp')}
-              {footerImage('/img/payment/master-card.webp')}
-              {footerImage('/img/payment/visa.webp')}
+              {footerImage('./img/payment/bca.webp')}
+              {footerImage('./img/payment/bni.webp')}
+              {footerImage('./img/payment/paypal.webp')}
+              {footerImage('./img/payment/master-card.webp')}
+              {footerImage('./img/payment/visa.webp')}
             </ul>
           </div>
 
