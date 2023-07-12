@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full h-[50px] stick bg-purple-500">
-        <Image src={'/icon.webp'} alt="null image source!" width={500} height={500} className='absolute left-[5%] top-[10px] w-[30px]' />
+        <Image src={'./icon.webp'} alt="null image source!" width={500} height={500} className='absolute left-[5%] top-[10px] w-[30px]' />
         <input type="checkbox" id="checkbox" onChange={() => setMenu(navMenu => !navMenu)} />
         <label htmlFor="checkbox" className="absolute right-0 m-[10px] toggle flex md:hidden">
           <div className="bars" id="bar1"></div>

@@ -53,7 +53,7 @@ export default function Homepage() {
           <a href="#product" className='p-[5px] bg-slate-300 w-[150px] text-center rounded-[5px]'>BUY NOW</a>
         </div>
         <Image
-          src="/img/hyper32.webp"
+          src="./img/hyper32.webp"
           alt="null image source!"
           width={500}
           height={500}
