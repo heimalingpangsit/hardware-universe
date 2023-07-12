@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='scroll-smooth'>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
         <title>Hardware Universe</title>
       </head>
       <body className={inter.className}>
