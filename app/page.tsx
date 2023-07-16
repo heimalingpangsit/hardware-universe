@@ -1,16 +1,9 @@
 
 "use client"
-import { useState } from 'react'
-import Image from 'next/image'
 
 const productBox = (src: string, title: string, price: string, discount?: string) => (
   <div className='bg-slate-200 w-[90vw] max-w-[400px] pb-[20px] px-[50px] self-center'>
-    <Image
-      src={src}
-      alt="null image source!"
-      width={500}
-      height={500}
-    />
+    <img src={src} alt="null image source!"/>
     <div className='flex justify-between'>
       <p>{title}</p>
       <h6 className='font-bold'>${price}<br /><del className='text-slate-700 text-[12px]'>{discount && `$${discount}`}</del></h6>
@@ -19,13 +12,7 @@ const productBox = (src: string, title: string, price: string, discount?: string
 )
 
 const star = () => (
-  <Image
-    src="./img/star.webp"
-    alt="null image source!"
-    width={500}
-    height={500}
-    className='w-[30px]'
-  />
+  <img src="./img/star.webp" alt="null image source!" className='w-[30px]' />
 )
 
 const comment = (name: string, starCount: number, message: string) => (
@@ -52,12 +39,7 @@ export default function Homepage() {
           <p className='max-w-[80%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, sequi!</p>
           <a href="#product" className='p-[5px] bg-slate-300 w-[150px] text-center rounded-[5px]'>BUY NOW</a>
         </div>
-        <Image
-          src="./img/hyper32.webp"
-          alt="null image source!"
-          width={500}
-          height={500}
-          className='max-w-[80%]'
+        <img src="./img/hyper32.webp" alt="null image source!" className='max-w-[80%]'
         />
       </header>
 

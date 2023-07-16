@@ -1,12 +1,12 @@
 {
   "name": "hardware-universe",
   "version": "0.1.0",
-  "homepage": "https://fiqtor.github.io/hardware-universe",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {

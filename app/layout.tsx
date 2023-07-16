@@ -3,7 +3,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Image from 'next/image'
 import Navbar from './navbar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,13 +21,7 @@ const footerLink = (url: string, label: string) => (
 )
 const footerImage = (src: string) => (
   <li>
-    <Image
-      src={src}
-      alt="null image source!"
-      width={500}
-      height={500}
-      className='w-[50px]'
-    />
+    <img src={src} alt="null image source!" className='w-[50px]' />
   </li>
 )
 const footerSvgLink = (url: string, action: any) => (
@@ -47,9 +40,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en">
       <head>
-        <link rel="icon" href="./favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <title>Hardware Universe</title>
       </head>
       <body className={inter.className}>
