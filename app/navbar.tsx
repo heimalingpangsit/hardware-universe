@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 const navLink = (url: string, label: string) => (
   <li className="mx-4 my-6 md:my-[10px] text-center">
-    <a href={url} className="text-xl text-white hover:text-slate-500 duration-300">
+    <a href={url} className="text-xl text-white hover:text-slate-300 duration-300">
       {label}
     </a>
   </li>
@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full h-[50px] fixed bg-purple-500 z-[100]">
+      <nav className="w-full h-[50px] fixed bg-purple-600 z-[100]">
         <img src="./icon.webp" alt="null image source!" className='absolute left-[5%] top-[10px] w-[30px]' />
         <input type="checkbox" id="checkbox" onChange={() => setMenu(navMenu => !navMenu)} />
         <label htmlFor="checkbox" className="absolute right-0 m-[10px] toggle flex md:hidden z-[1]">

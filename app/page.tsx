@@ -44,12 +44,12 @@ export default function Homepage() {
       </header>
 
       <div className='flex justify-around bg-purple-600 p-[20px] mt-[100px] text-white text-[2vw] font-extrabold overflow-x-scroll'>
-        <h3>NVIDIA</h3>
-        <h3>INTEL</h3>
-        <h3>HYPERX</h3>
-        <h3>AMD</h3>
-        <h3>KINGSTON</h3>
-        <h3>ADATA</h3>
+        <p>NVIDIA</p>
+        <p>INTEL</p>
+        <p>HYPERX</p>
+        <p>AMD</p>
+        <p>KINGSTON</p>
+        <p>ADATA</p>
       </div>
 
       <main className='flex flex-col gap-[200px] mt-[100px]'>

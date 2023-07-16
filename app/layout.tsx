@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const footerLink = (url: string, label: string) => (
   <li className="my-6 md:my-[10px] text-left">
-    <a href={url} className="text-md text-slate-200 hover:text-white duration-300">
+    <a href={url} className="text-md text-slate-200 hover:text-white duration-300" aria-label={label}>
       {label}
     </a>
   </li>
@@ -42,13 +42,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
         <title>Hardware Universe</title>
       </head>
       <body className={inter.className}>
         <Navbar />
         {children}
-        <footer id='footer' className='flex w-full bg-purple-500 mt-[100px] px-[5%] pt-[5%] flex-wrap justify-around'>
+        <footer id='footer' className='flex w-full bg-purple-600 mt-[100px] px-[5%] pt-[5%] flex-wrap justify-around'>
 
           <div className='text-center'>
             <h2 className='text-2xl font-bold text-slate-900'>Navigation</h2>
