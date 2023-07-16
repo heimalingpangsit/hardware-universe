@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const footerLink = (url: string, label: string) => (
   <li className="my-6 md:my-[10px] text-left">
-    <a href={url} className="text-md text-slate-200 hover:text-white duration-300" aria-label={label}>
+    <a href={url} className="text-md text-slate-300 hover:text-white duration-300" aria-label={label}>
       {label}
     </a>
   </li>
@@ -26,7 +26,7 @@ const footerImage = (src: string) => (
 )
 const footerSvgLink = (url: string, action: any) => (
   <li>
-    <a href={url} target='_blank'>
+    <a href={url} target='_blank' aria-label='link!'>
       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 600 512" className='w-[25px] h-[25px] fill-slate-300 hover:fill-white duration-300'>
         {action()}
       </svg>
@@ -51,7 +51,7 @@ export default function RootLayout({
         <footer id='footer' className='flex w-full bg-purple-600 mt-[100px] px-[5%] pt-[5%] flex-wrap justify-around'>
 
           <div className='text-center'>
-            <h2 className='text-2xl font-bold text-slate-900'>Navigation</h2>
+            <h2 className='text-2xl font-bold text-slate-100'>Navigation</h2>
             <ul>
               {footerLink('#best', 'Best Seller')}
               {footerLink('#product', 'All Product')}
@@ -60,7 +60,7 @@ export default function RootLayout({
           </div>
 
           <div className='text-center'>
-            <h2 className='text-2xl font-bold text-slate-900'>Top Brands</h2>
+            <h2 className='text-2xl font-bold text-slate-100'>Top Brands</h2>
             <ul>
               {footerLink('https://hyperx.com/', 'HyperX')}
               {footerLink('https://www.nvidia.com/', 'Nvidia')}
@@ -69,7 +69,7 @@ export default function RootLayout({
           </div>
 
           <div className='text-center'>
-            <h2 className='text-2xl font-bold text-slate-900'>Payment</h2>
+            <h2 className='text-2xl font-bold text-slate-100'>Payment</h2>
             <ul className='gap-4 flex flex-wrap'>
               {footerImage('./img/payment/bca.webp')}
               {footerImage('./img/payment/bni.webp')}
@@ -80,8 +80,8 @@ export default function RootLayout({
           </div>
 
           <div className='text-center'>
-            <h2 className='text-2xl font-bold text-slate-900'>Contact Us</h2>
-            <p className='mt-[10px]'>XYZ, Jakarta, Indonesia <br /> +62 800 1234 1234 <br /> Pin code - 12345</p>
+            <h2 className='text-2xl font-bold text-slate-100'>Contact Us</h2>
+            <p className='mt-[10px] text-white'>XYZ, Jakarta, Indonesia <br /> +62 800 1234 1234 <br /> Pin code - 12345</p>
             <ul className='flex gap-4 justify-around'>
               {footerSvgLink('https://www.facebook.com', facebookIcon)}
               {footerSvgLink('https://www.youtube.com/channel/UCjImMlihTzXB872jkBzsuiw', youtubeIcon)}

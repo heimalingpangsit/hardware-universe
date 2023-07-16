@@ -5,7 +5,7 @@ const productBox = (src: string, title: string, price: string, discount?: string
   <div className='bg-slate-200 w-[90vw] max-w-[400px] pb-[20px] px-[50px] self-center'>
     <img src={src} alt="null image source!"/>
     <div className='flex justify-between'>
-      <p>{title}</p>
+      <p className="self-center">{title}</p>
       <h6 className='font-bold'>${price}<br /><del className='text-slate-700 text-[12px]'>{discount && `$${discount}`}</del></h6>
     </div>
   </div>
@@ -56,8 +56,8 @@ export default function Homepage() {
 
         <section id='best' className='flex justify-center gap-7 flex-wrap'>
           <h2 className='text-3xl w-full text-center'>BEST <span className='text-purple-600'>SELLERS</span></h2>
-          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99')}
-          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x8GB', '59.99', '65.00')}
+          {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x16GB', '99.99', '120.00')}
           {productBox('./img/hyper32.webp', 'DDR4 HyperX RGB 2x32GB', '174.99', '200.00')}
         </section>
 

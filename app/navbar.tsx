@@ -24,7 +24,7 @@ export default function Navbar() {
         </label>
 
         <ul className={`
-        w-[50%] fixed bg-purple-500 justify-center top-[50px] duration-[0.3s] h-full z-[0] ease-in
+        w-[50%] fixed bg-purple-600 justify-center top-[50px] duration-[0.3s] h-full z-[0] ease-in
       md:relative md:w-full md:flex md:bg-transparent md:translate-x-0 md:top-0 md:justify-center md:right-[0]
       ${navMenu ? 'right-0' : 'right-[-100%]'}`}>
           {navLink('#best', 'Best Seller')}
